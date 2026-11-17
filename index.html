@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+    <h1>🛍️ ShopEase</h1>
+
+    <nav>
+        <a href="#product-list">Home</a>
+        <a href="#cart-section" class="cart-icon">
+            🛒 Cart (<span id="cart-count">0</span>)
+        </a>
+    </nav>
+</header>
+
+    <section class="hero">
+        <h2>Welcome to ShopEase</h2>
+        <p>Discover amazing products at the best prices!</p>
+    </section>
+
+    <main>
+        <section class="products-section">
+            <h2>Our Products</h2>
+            <div class="products" id="product-list">
+                <!-- Products will be displayed using JavaScript -->
+            </div>
+        </section>
+
+        <section class="cart-section" id="cart-section">
+            <h2>Shopping Cart</h2>
+            <div id="cart-items">
+                <p class="empty-cart">Your cart is empty!</p>
+            </div>
+
+            <div class="cart-total">
+                <h3>Total: ₹<span id="cart-total">0.00</span></h3>
+                <button id="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 ShopEase | Shopping Made Easy</p>
+    </footer>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
